@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+if (NOT TARGET hash-library::hash-library)
+  include(${CMAKE_CURRENT_LIST_DIR}/hash-libraryTargets.cmake)
+endif ()
